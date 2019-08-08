@@ -1,0 +1,33 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 150px;
+}
+
+.wrapper-drag-over {
+  background-color: rgba(237, 253, 255, 0.8);
+  transition: background-color .3 ease-in-out;
+}
+
+.item {
+  display: flex;
+  border: 1px solid #d3d3d3;
+  background-color: white;
+  border-radius: 3px;
+  margin-bottom: 5px;
+  padding: 8px 5px;
+  user-select: none;
+}
+
+.item-dragging {
+  border-style: dashed;
+}
+
+.handle {
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: orange;
+  margin-right: 5px;
+}
